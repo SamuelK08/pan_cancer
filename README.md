@@ -34,7 +34,7 @@ The pipeline culminates in a pan-cancer synthesis that identifies both conserved
 │   ├── 04_Functional_Analysis/
 |   ├── 05_Pan_Cancer_Analysis/ #final synthesis for the Bipartite method
 |   └── run_all_cancers.py      
-
+```.
 
 ## The Pipeline Workflow
 
