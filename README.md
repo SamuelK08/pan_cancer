@@ -17,7 +17,6 @@ The pipeline culminates in a pan-cancer synthesis that identifies both conserved
 *   **Reproducible & Modular:** The entire pipeline is built with modular scripts and a Conda environment to ensure full reproducibility.
 
 ## Directory Structure
-```.
 ├── louvain/
 |   └── 01_Input_Data/
 │       └── pathway_gmt_files/  #contains pathway definitions for enrichment 
