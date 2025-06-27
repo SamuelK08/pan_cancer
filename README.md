@@ -17,26 +17,24 @@ The pipeline culminates in a pan-cancer synthesis that identifies both conserved
 *   **Reproducible & Modular:** The entire pipeline is built with modular scripts and a Conda environment to ensure full reproducibility.
 
 ## Directory Structure
-The project is organized into a clear, sequential folder structure.
-├── louvain
-  ├── 01_Input_Data/
-  │ └── pathway_gmt_files/ # Contains pathway definitions for enrichment
-  ├── 02_Module_Discovery/ # Scripts and results for module detection w/plain Louvain
-  ├── 03_Pathway_Enrichment/ # Scripts and results for functional enrichment
-  ├── 04_Functional_Analysis/ # Scripts for ML grouping and final table generation
-  ├── 05_Pan_Cancer_Analysis/ # The final synthesized results from all cancers
-  ├── run_all_cancers.py # The master script to run the entire pipeline
-  ├── NetworkEdgelists/ # Contains the 30 cancer-specific edgelist files
-├── louvain-bipartite
-  ├── 01_Input_Data/
-  │ └── pathway_gmt_files/ # Contains pathway definitions for enrichment
-  ├── 02_Module_Discovery/ # Scripts and results for module detection w/louvain-bipartite
-  ├── 03_Pathway_Enrichment/ # Scripts and results for functional enrichment
-  ├── 04_Functional_Analysis/ # Scripts for ML grouping and final table generation
-  ├── 05_Pan_Cancer_Analysis/ # The final synthesized results from all cancers
-  ├── run_all_cancers.py # The master script to run the entire pipeline
-  ├── NetworkEdgelists/ # Contains the 30 cancer-specific edgelist files
-*Admittedly, there are no big differences between the results of the Louvain and the Louvain-Biparite moudle detection
+```.
+├── louvain/
+|   └── 01_Input_Data/
+│       └── pathway_gmt_files/  #contains pathway definitions for enrichment 
+│   ├── 02_Module_Discovery/    #scripts & results using standard Louvain
+│   ├── 03_Pathway_Enrichment/  #scripts and results for functional enrichment
+│   ├── 04_Functional_Analysis/ #scripts for ML grouping and final table generation
+│   ├── 05_Pan_Cancer_Analysis/ #final synthesis for the Louvain method
+│   └── run_all_cancers.py      #master script for this method
+└── louvain-bipartite/
+|   └── 01_Input_Data/
+│       └── pathway_gmt_files/    
+│   ├── 02_Module_Discovery/    #scripts & results using Bipartite-Louvain
+│   ├── 03_Pathway_Enrichment/
+│   ├── 04_Functional_Analysis/
+|   ├── 05_Pan_Cancer_Analysis/ #final synthesis for the Bipartite method
+|   └── run_all_cancers.py      
+
 
 ## The Pipeline Workflow
 
