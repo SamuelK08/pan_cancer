@@ -79,19 +79,19 @@ This project uses a Conda environment to manage all Python and R dependencies, e
     The following commands will create a new environment named `sam-development` and install all necessary packages.
 
     ```bash
-    # Create the environment with Python
+    #create the environment with Python
     conda create -n pan_cancer_analysis python=3.9 -y
 
-    # Activate the environment
+    #activate the environment
     conda activate pan_cancer_analysis
 
-    # Install Python packages (using conda-forge for compiled ones)
+    #install Python packages (using conda-forge for compiled ones)
     conda install -c conda-forge pandas networkx cdlib networkit scikit-learn openpyxl xlsxwriter -y
 
-    # Install the NLP package with pip
+    #install the NLP package with pip
     pip install sentence-transformers
 
-    # Install R and R packages (using conda-forge and bioconda)
+    #install R and R packages (using conda-forge and bioconda)
     conda install -c conda-forge r-base r-tidyverse r-argparse -y
     conda install -c bioconda r-fgsea r-biomart -y
     ```
