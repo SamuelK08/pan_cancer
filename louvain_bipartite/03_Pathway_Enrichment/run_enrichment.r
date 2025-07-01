@@ -51,7 +51,7 @@ run_pathway_enrichment <- function(modules_file, gmt_folder, output_folder) {
     
     #extract gene ids (non-mirna) from the module
     module_nodes <- module_list[[i]]
-    module_genes <- module_nodes[!grepl("hsa-", module_nodes)] # Using grepl is slightly more robust in R
+    module_genes <- module_nodes[!grepl("hsa-", module_nodes)] #using grepl is slightly more robust in R
     
     #initialize results vectors
     pathway_names_res <- c()
@@ -59,7 +59,7 @@ run_pathway_enrichment <- function(modules_file, gmt_folder, output_folder) {
     odds_ratios <- c()
     fold_enrichments <- c()
     shared_genes_list <- c()
-    jaccard_indices <- c() # Adding Jaccard as per previous advice
+    jaccard_indices <- c() #adding Jaccard as per previous advice
     
     #--- 5. loop through each pathway for the current module ---
     for (pathway_name in names(all_pathways)) {
